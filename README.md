@@ -11,6 +11,6 @@ git init
   git remote -v - check remote repo name
   git remote add origin git@github.com:MOHAMMEDELIYAS/HTML_FORM.git - adding remote repo 
   git remote set-url origin git@github.com:MOHAMMEDELIYAS/Demo-repo.git - set new rmeote repo 
-  git push 
+  git push git
   git pull 
   ,
