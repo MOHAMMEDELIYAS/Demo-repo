@@ -1,0 +1,41 @@
+server.py
+
+import socket
+s= socker.socket()
+
+port = 2222
+ip = ""
+
+s.bind((ip ,port))
+s.listen()
+
+#csession , addr = s.accept()
+
+
+def iiecs(csession , addr):
+    print(addr)
+    csession , send(b"i am server")
+    data = csession.recv(100)
+    print(data)
+    
+while True:
+     csession , addr = s.accept()
+     t1 = threading.Thread(target=iiecs , args=(csession , addr))
+     t1.start()
+     
+print(addr)
+
+==
+sender.py
+
+import socket
+s= socker.socket()
+
+port = 2222
+ip = "192.168.0.0"
+
+s.connect((ip,port))
+
+x = s.recv(1024)
+s.send(b"hi server")
+====
